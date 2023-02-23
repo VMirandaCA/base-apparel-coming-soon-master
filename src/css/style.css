@@ -1,8 +1,79 @@
-body {
-    background-image: url(../images/bg-pattern-desktop.svg);
-    background-repeat: no-repeat;
+:root {
+    --JosefinSans: 'Josefin Sans', sans-serif;
+   
 }
 
-/*@media(max-width:375px) {}  
-@media(max-width:768px) {}
-@media (max-width:1440px) {}/*
+/* estilização do projeto*/
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--JosefinSans);
+    margin: 0;
+}
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+.logo {}
+.container_direita_texto {
+    width: 60%;
+}
+.container_esquerda_foto {
+    width: 40%;
+}
+.foto_modelo{
+    background-image: url(../images/hero-desktop.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+form {
+    position: relative;
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    padding: 0.938rem;
+    height: 3.438rem;
+    width: 100%;
+}
+button{
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70% 0.5);
+    border: none;
+    border-radius: 3.125rem;
+    padding: 0.938rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3.438rem;
+    width: 6.25rem;
+}
+button:hover {
+
+}
+.icone_erro{
+    position: absolute;
+    top: 0.938rem;
+    right: 6.875rem;
+}
+
+small {
+    color:  hsl(0, 93%, 68%);
+    display: block;
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+footer {
+    display: none;
+}
+@media(min-width:375px) {}  
+@media(min-width:768px) {}
+@media (min-width:1024px) {}
