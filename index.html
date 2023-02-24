@@ -21,33 +21,39 @@
 
     <main>
 
+      <header>
+        <img src="./src/images/logo.svg" alt="" class="logo">
+      </header>
+
       <section class="container">
 
-        <div class="container_direita_texto">
-          <img src="./src/images/logo.svg" alt="" class="logo">
-          <h1 class="container_direita_texto-titulo">
-            <span> We're </span>
-            coming soon</h1>
+        <div>
+          <img id="picture_desktop" src="./src/images/hero-desktop.jpg" alt="">
 
-          <p class="container_direita_
-          texto-resumo"> Hello fellow shoppers! We're currently building our new fashion store. 
-          Add your email below to stay up-to-date with announcements and our launch deals.
-          </p>
-
-          <form>
-            <input type="email" placeholder="Emaill Address">
-            <img src="./src/images/icon-error.svg" alt="" class="icone_erro" alt="erro">
-            <button>
-              <img src="./src/images/icon-arrow.svg" alt="seta">
-            </button>
-            <small>Please provide a valid email</small>
-          </form>
-          
-          <div class="container_esquerda_foto  foto_modelo" alt="modelo com camisa terracota e pulseira dourada">
-          </div>
-
+          <img id="picture_mobile" src="./src/images/hero-mobile.jpg" alt="">
         </div>
 
+        <div class="container_direita">
+          <h1 class="container_direita_texto-titulo">
+            <span> We're </span><br>
+            coming soon</h1>
+
+          <p class="container_direita_texto-resumo"> Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          
+          <form>
+            <input type="email" placeholder="Email Address">
+            <img src="./src/images/icon-error.svg" alt="" class="email_icone_erro" alt="erro">
+            <button>
+              <img class="email_seta" src="./src/images/icon-arrow.svg" alt="seta">
+            </button>
+
+            <p class="email_texto">Please provide a valid email</p>
+          </form>
+
+        </div>
+      
       </section>
     </main>
     
