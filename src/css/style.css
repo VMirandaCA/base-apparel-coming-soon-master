@@ -5,26 +5,31 @@
     --Cor1: hsl(0, 36%, 70%);
     --Cor2: hsl(0, 93%, 68%);
 
+    --Cor_Container:  hsl(0, 65%, 97%);
+
     --Cor_Texto-Titulo:hsl(0, 6%, 24%);
 
     --JosefinSans: 'Josefin Sans', sans-serif;
 }
 
 /* estilização do projeto*/
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-family: var(--JosefinSans);
     margin: 0;
+    display: flexbox;
 }
 .container {
     display: flex;
 }
 .logo {
-    width: 25%;
+    width: 40%;
     max-height: 630px;
 }
 .container_direita_texto {
-    width: 60%;
     height: auto;
     margin: 2rem;
     display: flex;
@@ -33,6 +38,7 @@ body{
     font-weight:bold;
     font-size: 3rem;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
     color: var(--Cor_Texto-Titulo);
 }
 span {
@@ -56,9 +62,8 @@ input {
     background: none;
     color: var(--Cor1);
     font-weight:300;
-    font-size: ;
+    font-size: small;
     padding: 0 2rem;
-
 }
 .email_icone_erro {
     /*display: none;*/
@@ -68,20 +73,17 @@ input {
 button {
     background-image: var(--Cor_Gradiente2);
     border: none;
-    border-radius: 5rem;
-    padding: 0.938rem;
-    position: absolute;
-    right: -9%;
-    height: 2.89rem;
-    width: 4rem;
+    border-radius: 0.5rem;
+    height: 2;
+    
 }
 
 .email_texto {
-   /* display: none;*/
+   display: none;
 }
 
 .container_esquerda_foto {
-    width: 40%;
+    
 }
 .foto_modelo {}
 
@@ -134,23 +136,25 @@ footer {
 
 /* Responsivo*/
 
-@media(max-width:768px) {
-    body {
-        background-color: none;
-    }
-    header {
+@media  only screen and (min-width: 320px) {
+
+     header {
         background-color: var(--Cor_Gradiente1); 
     }
     .logo {
         padding: 1.5rem;
     }
-    .container {
+    section  {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        background-color: var(--Cor_Container);
     }
     #picture_desktop {
         display: none;
+    }
+    #picture_mobile {
+        display: block;
         width: 100%;
     }
     .container_direita_texto-titulo {
@@ -169,14 +173,19 @@ footer {
     p .email_texto {}
    
 }  
-@media(min-width:768px) {
+@media  only screen and (min-width: 600px) {
     
-    .container {}
-    .container_direita {}
+    .container {
+        background-color: var(--Cor_Gradiente2);
+    }
+    .container_direita {
+        margin-top: 18.5rem;
+    }
     .topo_logo {}
-    .container_direita_texto-titulo {}
-    h1 {}
-    span {}
+    .container_direita_texto-titulo {
+        
+    }
+    
     p .container_direita_texto-resumo {}
     form {}
     input {}
@@ -184,14 +193,12 @@ footer {
     button .email_seta {}
     p .email_texto {}
     .container_esquerda_foto {}
-    .foto_modelo {}
+    
 
 }
-@media (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     .topo_logo {}
-    .logo {
-
-    }
+    .logo {}
     .container {
         
     }
@@ -205,10 +212,10 @@ footer {
     .email_icone_erro {}
     button .email_seta {}
     p .email_texto {}
-   #picture_mobile {
-    display: none;
-   }
    #picture_desktop {
     display: block;
+   }
+   #picture_mobile {
+    display: none;
    }
 }
