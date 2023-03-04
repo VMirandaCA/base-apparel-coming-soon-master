@@ -3,7 +3,7 @@
     --Cor_Gradiente2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
     --Cor1: hsl(0, 36%, 70%);
-    --Cor2: hsl(0, 93%, 68%);
+    --Cor_Texto-Erro: hsl(0, 93%, 68%);
 
     --Cor_Container:  hsl(0, 65%, 97%);
 
@@ -51,10 +51,11 @@ span {
     font-weight: bold;
     line-height: 1.5rem;
 }
-form {
+form #email {
     border: 1px solid var(--Cor1);
-    width: 80%;
-    margin: 2rem 3rem 6rem;
+    padding: 0.7rem;
+    margin: 2rem;
+    width: 50%;
     border-radius: 5rem;
 }
 input {
@@ -63,29 +64,32 @@ input {
     color: var(--Cor1);
     font-weight:300;
     font-size: small;
-    padding: 0 2rem;
+    padding: 1rem;
+    border-color: none;
 }
 .email_icone_erro {
     /*display: none;*/
     position: relative;
-    top: 0;
+    top: 0.5rem;
 }
 button {
     background-image: var(--Cor_Gradiente2);
     border: none;
-    border-radius: 0.5rem;
-    height: 2;
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 3.5rem;
+    position: relative;
+    top: 0.3rem;
+    right: -0.7rem;
+
     
 }
 
-.email_texto {
-   display: none;
+div .email_texto {
+    margin: 1rem 2rem;
+    color: var(--Cor_Texto-Erro);
+   /*display: none;*/
 }
-
-.container_esquerda_foto {
-    
-}
-.foto_modelo {}
 
 /*
 form {
@@ -144,7 +148,7 @@ footer {
     .logo {
         padding: 1.5rem;
     }
-    section  {
+   .container  {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
