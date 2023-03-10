@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+    <script src="/src/js/index.js" ></script>
     
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -19,54 +21,42 @@
 
   <body>
 
-    <main>
+    <header>
+      <img src="./src/images/logo.svg" alt="" class="logo">
+    </header>
+    
+    <section class="container">
 
-      <header>
-        <img src="./src/images/logo.svg" alt="" class="logo">
-      </header>
+      <div>
+        <img id="picture_desktop" src="./src/images/hero-desktop.jpg" alt="">
+      </div>
 
-      <section class="container">
+      <div>
+        <img id="picture_mobile" src="./src/images/hero-mobile.jpg" alt="">
+      </div>
 
-        <div>
-          <img id="picture_desktop" src="./src/images/hero-desktop.jpg" alt="">
-        </div>
+      <div class="container__esquerda">
+        <h1 class="container_esquerda_texto-titulo">
+          <span> We're </span><br>coming soon</h1>
 
-        <div>
-          <img id="picture_mobile" src="./src/images/hero-mobile.jpg" alt="">
-        </div>
-
-        <div class="container_direita">
-          <h1 class="container_direita_texto-titulo">
-            <span> We're </span><br>
-            coming soon</h1>
-
-          <p class="container_direita_texto-resumo"> Hello fellow shoppers! We're currently building our new fashion store. 
-          Add your email below to stay up-to-date with announcements and our launch deals.
+          <p class="container_esquerda_texto-resumo"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
-          
-          <form>
-
-            <label id="email">
-              <input type="email" placeholder="Email Address"><img src="./src/images/icon-error.svg" alt="" class="email_icone_erro" alt="erro">
-                <button>
-                  <img class="email_seta" src="./src/images/icon-arrow.svg" alt="seta">
-                </button>
+            
+          <form action="email" class="erro">
+            <label for="email" id="email error">
+              <input id="email-input" name="email" type="email" placeholder="Email Adress" ><img id="error" src="./src/images/icon-error.svg" alt="" class="email_icone_erro" alt="erro">
+              <button id="enviar">
+              <img class="email_seta" src="./src/images/icon-arrow.svg" alt="seta">
+              </button>
               </input>
             </label>
-
-            <div>
-              <p class="email_texto">Please provide a valid email
+              <p id="error" class="email_texto">Please provide a valid email
               </p>
-            </div>
-
           </form>
-
-         
-
-        </div>
+    
+          </div>
       
       </section>
-    </main>
     
     <footer>
       <p class="attribution">
